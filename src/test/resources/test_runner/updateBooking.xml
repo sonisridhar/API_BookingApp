@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Regression Suitr" verbose="3" thread-count="6"
+	parallel="tests">
+
+	<listeners>
+		<listener class-name="com.qa.api.booker.listner.ExtentReportListner" />
+	</listeners>
+
+	<test name="Create User API">
+
+		<classes>
+			<class name="com.qa.api.booker.tests.UpdateBooking" />
+		</classes>
+
+	</test>
+
+
+</suite> 
